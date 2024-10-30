@@ -46,16 +46,50 @@
         </nav>
     </header>
 
-    <main class="flex-grow max-w-4xl w-full md:py-8 md:px-4 md:mx-auto">
-        <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+    <main class="flex-grow max-w-4xl w-full md:py-8 md:px-4 md:mx-auto pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased">
+        <div class="flex justify-between px-4 mx-auto max-w-screen-xl text-lg font-normal text-gray-500 dark:text-gray-400">
             <article class="mx-auto w-full max-w-2xl">
                 <header class="mb-4 lg:mb-6">
-                    <h1 class="mb-4 font-bold text-2xl md:text-4xl dark:text-white">How Cloutfit got started</h1>
+                    <h1 class="mb-4 font-bold text-2xl md:text-4xl pb-2 dark:text-white border-b dark:border-white">How Cloutfit got started</h1>
                 </header>
-                <p class="dark:text-white">This project consists of the development of a cross-platform application called Cloutfit, whose purpose is to improve the online clothing shopping experience. 
-                    Cloutfit unifies garments from different shops in a single point, allowing the user to consider multiple options and brands. In addition, it offers a recommendation algorithm based 
-                    on the preferences indicated by the user, with the aim of simplifying and minimising the search time needed to find the desired garments. Upon checkout, users will be redirected to 
-                    the original shops to complete the transaction, positioning CloutFit as a personalised and centralised search tool that will enhance the online fashion shopping process.</p>
+                <p class="pb-4">
+                    One day, while shopping for clothes online (an activity I don't particularly enjoy), I realised how difficult it was to find clothes that really suited my taste. 
+                    As I went through hundreds of options that I didn't like, I thought about how useful an app that recommended clothes based on my personal preferences would be.</p>
+                    <!-- pon en diderentes tiendas <-  -->
+                <p class="pb-4">
+                    The first thing I did was research to see if something similar already existed. I had heard of apps that recommended certain clothes or styles based on the user's
+                    physical characteristics and tastes. However, after an exhaustive search, I came to the conclusion that none of the available options really convinced me, so
+                    I decided to develop my own version with a fresh approach, away from the current methods that require the user to fill out endless forms about their characteristics and preferences,
+                    a process that can be so tedious that it ends up taking away the desire to buy.</p>
+                
+                <p class="pb-4">
+                    My goal was to change the approach to this type of application and make the experience of defining preferences fun and dynamic.
+                    Inspired by current interaction trends, such as infinite scrolling, I came up with a more agile way of getting to know each user's tastes: 
+                    showing them images of different garments that they could rate in a binary way, simply by indicating whether they liked them or not.</p>
+
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">But which clothes are going to be recommended?</h2>
+
+                <p class="pb-4">
+                    For the application to be really useful, we need to get the clothes that are popular with consumers. Therefore, I decided that the best 
+                    option was to offer product recommendations from the most popular stores and brands in Spain, allowing the user to explore and receive clothing 
+                    recommendations from different stores in a single platform. To do this, I used 
+                    <a href="https://www.researchgate.net/publication/357401723_Web_Scraping_or_Web_Crawling_State_of_Art_Techniques_Approaches_and_Application" 
+                    class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">web scraping</a> techniques that were implemented in 
+                    <a href="https://www.python.org" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Python</a>.</p>
+
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">Final product</h2>
+                <p class="pb-4">
+                    Using the ideas above, I developed a mobile application called Cloutfit using <a href="https://reactnative.dev" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">React Native</a>,
+                    which aims to improve the online clothing shopping experience.
+                    Cloutfit brings together clothes from different stores in a single place, allowing the user to consider multiple options and brands. It also offers a
+                    recommendation algorithm based on the user's preferences, with the aim of simplifying and minimising the search time needed to find the desired garments.
+                    Finally, to make the purchase, users are redirected to the original stores to complete the transaction.</p>
+
+
+                <!-- <figure><img src="./cloutfitlogo.png" alt="cloutfit-logo">
+                    <figcaption class="dark:text-white">CloutFit logo</figcaption>
+                </figure> -->
+
             </article>
         </div>
     </main>
