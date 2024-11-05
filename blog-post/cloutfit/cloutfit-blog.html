@@ -11,11 +11,11 @@
     <meta name="author" content="Alejandra Bermo">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./favicon/favicon-48x48.png" sizes="48x48" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="../../assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../../assets/favicon/site.webmanifest" />
 
 </head>
 
@@ -47,53 +47,160 @@
     </header>
 
     <main class="flex-grow max-w-4xl w-full md:py-8 md:px-4 md:mx-auto pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased">
-        <div class="flex justify-between px-4 mx-auto max-w-screen-xl text-lg font-normal text-gray-500 dark:text-gray-400">
-            <article class="mx-auto w-full max-w-2xl">
+        <div class="px-4 mx-auto text-lg font-normal text-gray-500 dark:text-gray-400">
+            <article class="mx-auto w-full">
                 <header class="mb-4 lg:mb-6">
                     <h1 class="mb-4 font-bold text-2xl md:text-4xl pb-2 dark:text-white border-b dark:border-white">How Cloutfit got started</h1>
                 </header>
-                <p class="pb-4">
-                    One day, while shopping for clothes online (an activity I don't particularly enjoy), I realised how difficult it was to find clothes that really suited my taste. 
-                    As I went through hundreds of options that I didn't like, I thought about how useful an app that recommended clothes based on my personal preferences would be.</p>
-                    <!-- pon en diderentes tiendas <-  -->
-                <p class="pb-4">
-                    The first thing I did was research to see if something similar already existed. I had heard of apps that recommended certain clothes or styles based on the user's
-                    physical characteristics and tastes. However, after an exhaustive search, I came to the conclusion that none of the available options really convinced me, so
-                    I decided to develop my own version with a fresh approach, away from the current methods that require the user to fill out endless forms about their characteristics and preferences,
-                    a process that can be so tedious that it ends up taking away the desire to buy.</p>
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">How an afternoon of online shopping led to the birth of Cloutfit</h2>
                 
                 <p class="pb-4">
-                    My goal was to change the approach to this type of application and make the experience of defining preferences fun and dynamic.
-                    Inspired by current interaction trends, such as infinite scrolling, I came up with a more agile way of getting to know each user's tastes: 
-                    showing them images of different garments that they could rate in a binary way, simply by indicating whether they liked them or not.</p>
-
-                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">But which clothes are going to be recommended?</h2>
+                    It all started one day while I was browsing through thousands of shirts, jackets, and pants that just didn’t quite do it for me, hopping from store
+                    to store, wishing someone (or something) could filter all that clothing and show me only what truly suited my style. It was in that moment of frustration,
+                    with twenty tabs open and zero items in my cart, that the idea hit me: what if there were an app that could save me from all this hassle?</p>
 
                 <p class="pb-4">
-                    For the application to be really useful, we need to get the clothes that are popular with consumers. Therefore, I decided that the best 
-                    option was to offer product recommendations from the most popular stores and brands in Spain, allowing the user to explore and receive clothing 
-                    recommendations from different stores in a single platform. To do this, I used 
-                    <a href="https://www.researchgate.net/publication/357401723_Web_Scraping_or_Web_Crawling_State_of_Art_Techniques_Approaches_and_Application" 
-                    class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">web scraping</a> techniques that were implemented in 
+                    The concept was simple: an app that gathered all my favorite stores in one place and, even better, recommended clothes based on my tastes, sparing me the agony
+                    of sifting through items I knew I’d never wear. That’s how Cloutfit was born, an app designed to make clothes shopping faster and more effective.</p>
+                    
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">The First Step: Am I a genius, or does this already exist?</h2>
+
+                <p class="pb-4">
+                    With a coffee in hand, I did what any sensible developer would do: a quick search to see if someone else had already had this “brilliant idea”
+                    That’s when I stumbled upon <a href="https://www.shopstyle.com/" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Shopstyle</a>,
+                    an American platform that also collects fashion items from various stores. Demotivation? Not really.
+                    What I had in mind was a step further: an app that not only gathered stores but also understood my preferences and could suggest items with great accuracy.</p>
+
+                <p class="pb-4">
+                    Since no app combined both approaches (store aggregation and personalized recommendations), I decided this was my chance to fill that gap in the market.
+                    So, I began developing Cloutfit.</p>
+
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">The Magic Behind Cloutfit: A Stylish Algorithm</h2>
+
+                <div style="display: flex; gap: 20px; align-items: flex-start; padding-bottom: 16px;">
+                    <div style="flex: 1;">
+                        <p class="pb-4">
+                            The key to Cloutfit was going to be its ability to recommend. That’s where the recommendation algorithm came into play. From the outset, I aimed to make
+                            this experience fun and intuitive, far removed from the typical long forms that require you to remember and detail every aspect of your style or physical characteristics.
+                        </p>
+
+                        <p class="pb-4">
+                            Drawing inspiration from current entertainment trends, like infinite scrolling, I thought: why not let users visually decide their preferences? Instead
+                            of asking them to explain their style, we would show them directly items they could “like” or “dislike” It’s like a “thumbs up/thumbs down” game where 
+                            the more you play, the better Cloutfit gets to know you. Although it’s not technically infinite scrolling (since the images displayed are finite and appear 
+                            on the screen as they’re tagged) it creates the same interactive and fun feeling that turns the customization process into a stylish game.
+                        </p>
+
+                        <p class="pb-4">
+                            As shown in the <a href="#fig1" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Figure 1</a>, the final result is an interface that displays all the relevant information for each item. This includes images (which can be viewed through
+                            horizontal scrolling), the name of the item, its price, the store it belongs to, and buttons that allow users to tag the items according to their preferences.
+                        </p>
+                    </div>
+                
+                    <figure id="fig1" style="text-align: center;">
+                        <img src="./set_preferences.png" style="width: 279px; height: 600px; border-radius: 20px; overflow: hidden;">
+                        <figcaption>Figure 1: Set preferences</figcaption>
+                    </figure>
+                </div>
+
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">How does CloutFit know what you’ll like?</h2>
+
+            
+                <p class="pb-4 pt-4">
+                    The answer lies in the recommendation algorithm, designed to suggest images similar to those you’ve
+                    liked while avoiding those that resemble images you didn’t like.
+                </p>
+
+                <p class="pb-4">
+                    To measure the similarity between images, I decided to use embeddings, which are lower-dimensional numerical representations that capture key features 
+                    of each image. To generate these embeddings, I employed a pre-trained convolutional neural network called <a href="https://pytorch.org/vision/0.18/models/generated/torchvision.models.resnet50.html"
+                    class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">ResNet50</a>, applied to all the garments in the 
+                    app. It’s important to note that for each item, we use an image showing the garment head-on against a white background, allowing for more accurate 
+                    comparisons by minimizing noise.
+                </p>
+
+                <p class="pb-4">
+                    Once the embeddings were calculated, we could start measuring the distance between the images that users have tagged and the new images they haven't 
+                    interacted with. This meant comparing each new image with all the images tagged by the user, which would create a significant computational burden. 
+                    Therefore, I decided to use clustering to group the items tagged by the user, significantly reducing the amount of computation needed.
+                </p>
+
+
+                <p class="pb-4">
+                    <a href="https://scikit-learn.org/1.5/modules/generated/sklearn.cluster.DBSCAN.html" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Clustering</a> 
+                    is applied to the embeddings of the images that the user has tagged, and once the groups are formed, comparisons are made with the new items 
+                    in the app. While one might think a cluster represents a single preference, tastes can be quite varied. For this reason, I decided to calculate two centroids 
+                    for each cluster: one for the items the user likes and another for those they don’t. These centroids are used to measure the distance between the embedding 
+                    of the new image and the two centroids.
+                </p>
+
+
+                <p class="pb-4">
+                    Thus, for a new set of images, we select those with embeddings close to the "likes" centroids and far from the "dislikes" centroids. This will give us a 
+                    numerical value representing the algorithm's confidence that the user will like the image. We then present the items to the user, sorted by this level of confidence.
+                </p>
+
+
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">But which clothes would be recommended?</h2>
+
+                <p class="pb-4">
+                    For the app to be truly useful, it’s essential to offer clothing that genuinely appeals to consumers. That’s why I decided the best strategy was to 
+                    provide product recommendations from the most popular stores and brands in Spain. To achieve this, I implemented web scraping techniques using
                     <a href="https://www.python.org" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Python</a>.</p>
 
-                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">Final product</h2>
+                <h2 class="mb-4 font-bold text-xl md:text-2xl dark:text-white">The final product</h2>
                 <p class="pb-4">
-                    Using the ideas above, I developed a mobile application called Cloutfit using <a href="https://reactnative.dev" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">React Native</a>,
-                    which aims to improve the online clothing shopping experience.
-                    Cloutfit brings together clothes from different stores in a single place, allowing the user to consider multiple options and brands. It also offers a
-                    recommendation algorithm based on the user's preferences, with the aim of simplifying and minimising the search time needed to find the desired garments.
-                    Finally, to make the purchase, users are redirected to the original stores to complete the transaction.</p>
+                    CloutFit is a mobile app developed with <a href="https://reactnative.dev/" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">React Native</a>, 
+                    designed to make finding clothes that match your style easy, without wasting time jumping between multiple stores. 
+                    As we’ve seen, the app has two clear goals: centralize fashion searches and personalize them. On the one hand, it offers an extensive catalog 
+                    of items from different stores and brands, allowing users to browse a wide variety of products without opening twenty tabs. On the other, it 
+                    features an algorithm that “learns” from each user’s preferences to suggest clothes that align with their style, keeping out items they’d never wear.</p>
+                
+                <p class="pb-4">
+                    There are two types of users on CloutFit, with different levels of access:
+                </p>
 
+                <ol class="pb-4">
+                    <li class="pb-4"><strong class="dark:text-white">Unregistered users</strong>. For users without an account, CloutFit works as a visual fashion catalog. 
+                        They can browse all available items, view each item’s details (name, price, store), and access the purchase link 
+                        for each store. They also have a filter menu to adjust their search by type and category. <a href="#fig2" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Figure 2</a> shows an example 
+                        of how unregistered users experience the app.
+                    </li>
+                    <li class="pb-4"><strong class="dark:text-white">Registered users</strong>. Users with a CloutFit account have access to the catalog, the full power of the 
+                        recommendation system, and the ability to save items as favorites. <a href="#fig3" class="dark:text-blue-600 hover:border-b-2 hover:border-blue-600">Figure 3</a> includes a video showing the experience 
+                        for users who log in.
+                    </li>
+                </ol>
 
-                <!-- <figure><img src="./cloutfitlogo.png" alt="cloutfit-logo">
-                    <figcaption class="dark:text-white">CloutFit logo</figcaption>
-                </figure> -->
+                <div style="display: flex; justify-content: center; gap: 80px; align-items: center; margin-bottom: 40px;">
+                    <figure id="fig2" style="text-align: center;">
+                        <video style="width: 279px; height: 600px; border-radius: 20px; overflow: hidden;" controls>
+                            <source src="./video_cf_blog.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>Figure 2: Unregistered users</figcaption>
+                    </figure>
 
+                    <figure id="fig3" style="text-align: center;">
+                        <video style="width: 279px; height: 600px; border-radius: 20px; overflow: hidden;" controls>
+                            <source src="./video_cf_blog_auth.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>Figure 3: Registered users</figcaption>
+                    </figure>
+                </div>
+
+                <p class="pb-4 pt-4">
+                   This concludes our journey through the development of CloutFit. Currently, the app is not published, and I don’t have 
+                   immediate plans to continue the project, as I’m focused on other initiatives. However, in the future, with a better understanding 
+                   of the legal aspects of using data from different stores, I might pick it up again.</p>
+
+                <p class="pb-4">
+                    Thank you for reading, and I hope you enjoyed learning about CloutFit!</p>                
+            
             </article>
         </div>
     </main>
-
 </body>
 <script src="../../script.js"></script>
 </html>
