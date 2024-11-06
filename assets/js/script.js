@@ -13,9 +13,9 @@ function switchLogo() {
     const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (darkMode) {
-        logo.src = 'assets/images/logo/github-mark-white.png';
+        logo.src = '../assets/images/logo/github-mark-white.png';
     } else {
-        logo.src = 'assets/images/logo/github-mark.png';
+        logo.src = '../assets/images/logo/github-mark.png';
     }
 }
 
